@@ -7,7 +7,9 @@ use App\User;
 
 
 class Reply extends Model
-{
+{   
+    protected $guarded = []; 
+
     public  function question()
     {
         return $this->belongsTo(Question::class);
@@ -15,6 +17,11 @@ class Reply extends Model
 
     public function user()
     {
-        return $this->hasMany(Like::class); 
+        return $this->belongsTo(User::class); 
     } 
+
+    public function like()
+    {
+        return $this->hasMany(Like::class); 
+    }
 }
