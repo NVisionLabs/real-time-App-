@@ -1,7 +1,7 @@
 <template>
   <div>
-    <toolbar></toolbar>
-    <app-footer></app-footer> 
+  <toolbar></toolbar>
+  <app-footer></app-footer>
   </div>
 </template>
 
@@ -9,13 +9,10 @@
 import toolbar from './Toolbar'
 import AppFooter from './AppFooter'
 
-
 export default {
-    components:{toolbar, AppFooter}
+  components:{toolbar,AppFooter}
 }
 </script>
 
 <style>
-
-
 </style>
