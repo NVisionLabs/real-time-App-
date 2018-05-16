@@ -40,9 +40,7 @@ export default {
     }, 
     methods:{
         login(){
-           axious.post('/api/auth/login',this.form)
-            .then(res => console.log(res.data))
-            .catch(error => console.log(error.response.data)) 
+           User.login(this.form)
         }
     }
 }
